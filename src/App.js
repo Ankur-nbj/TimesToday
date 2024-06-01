@@ -2,6 +2,7 @@ import React from 'react';
 import Navbar from './components/Navbar';
 import News from './components/News';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+// require('dotenv').config();
 
 const App =()=> {
    const apiKey='7dbf1117bb1d4bef93567dbda59a5120';

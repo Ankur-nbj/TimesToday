@@ -31,14 +31,16 @@ useEffect(() => {
 }, [])
 
 
-const fetchMoreData = async () => {   
-    const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page+1}&pageSize=5`;
-    setPage(page+1) 
-    let data = await fetch(url);
-    let parsedData = await data.json()
-    setArticles(articles.concat(parsedData.articles))
-    setTotalResults(parsedData.totalResults)
-  };
+const fetchMoreData = async () => {
+  const nextPage = page + 1;
+  const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${nextPage}&pageSize=5`;
+  const response = await fetch(url);
+  const data = await response.json();
+  setArticles(prevArticles => [...prevArticles, ...data.articles]);
+  setPage(nextPage);
+  setTotalResults(data.totalResults);
+};
+
   
   return (
     <div className="container my-5" >
