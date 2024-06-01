@@ -55,7 +55,7 @@ const fetchMoreData = async () => {
         loader={<Spinner/>}
       >
         <div className="container row w-100 ps-5">
-          {articles.map((article) => (
+          {articles&&articles.map((article) => (
             <div className="col-md-4 col-sm-6 " key={article.url}>
               <NewsItem
                 title={article.title ? article.title.slice(0, 40) : ''}
