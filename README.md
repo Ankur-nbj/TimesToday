@@ -80,10 +80,4 @@ Please ensure your pull request adheres to the project's coding conventions and 
 ## License
 
 This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
-```
 
-### Notes:
-- The README now includes a detailed section on contributing, guiding potential contributors through the process of making changes and submitting pull requests.
-- Screenshots are referenced assuming they are located in a `/screenshots` directory within the project.
-- Ensure to replace placeholders (`your-username`, `your_api_key_here`, etc.) with actual values specific to your project.
-- This template provides a comprehensive overview suitable for a GitHub repository hosting a React-based news application utilizing a news API and Bootstrap for styling. Adjustments can be made based on additional project features or specific requirements.
