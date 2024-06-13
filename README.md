@@ -1,70 +1,89 @@
-# Getting Started with Create React App
+# TimesToday [ News Application ] 📰
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This project is a React-based news application that fetches news articles from a news API and displays them using Bootstrap for styling.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- Fetches news articles from a news API. 🗞
+- Displays news articles with title, description, and source
+- Responsive design using Bootstrap
 
-### `npm start`
+## Technologies Used
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+- React
+- JavaScript
+- Bootstrap
+- News API (NewsAPI.org)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+## Installation
 
-### `npm test`
+To run this project locally, follow these steps:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+1. Clone the repository:
 
-### `npm run build`
+   ```bash
+   git clone https://github.com/your-username/news-app.git
+   ```
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+2. Navigate into the project directory:
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+   ```bash
+   cd news-app
+   ```
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+3. Install dependencies using npm:
 
-### `npm run eject`
+   ```bash
+   npm install
+   ```
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+4. Create a `.env` file in the root directory and add your News API key:
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+   ```plaintext
+   REACT_APP_NEWS_API_KEY=your_api_key_here
+   ```
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+   Replace `your_api_key_here` with your actual API key obtained from the news API provider.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+5. Start the application:
 
-## Learn More
+   ```bash
+   npm start
+   ```
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+   This will start the development server and open the app in your default browser.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+## Usage
 
-### Code Splitting
+- Upon starting the application, news articles will be fetched and displayed.
+- Click on individual articles to read the full article on the source's website.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+## Screenshots
 
-### Analyzing the Bundle Size
+<img width="944" alt="image" src="https://github.com/Ankur-nbj/TimesToday/assets/108694248/b3202953-c6f8-4b26-941e-34303578afb7">
+<img width="946" alt="image" src="https://github.com/Ankur-nbj/TimesToday/assets/108694248/9c6a4f3d-ebbc-4494-9f23-555e0bfbbf6f">
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
 
-### Making a Progressive Web App
+## Contributing
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Contributions are welcome! Here's how you can contribute:
 
-### Advanced Configuration
+1. Fork the repository.
+2. Create a new branch (`git checkout -b feature/your-feature-name`).
+3. Make your changes.
+4. Commit your changes (`git commit -am 'Add some feature'`).
+5. Push to the branch (`git push origin feature/your-feature-name`).
+6. Create a new Pull Request.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Please ensure your pull request adheres to the project's coding conventions and includes relevant documentation or tests if applicable.
 
-### Deployment
+## License
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+This project is licensed under the MIT License. See the [LICENSE](LICENSE) file for details.
+```
 
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+### Notes:
+- The README now includes a detailed section on contributing, guiding potential contributors through the process of making changes and submitting pull requests.
+- Screenshots are referenced assuming they are located in a `/screenshots` directory within the project.
+- Ensure to replace placeholders (`your-username`, `your_api_key_here`, etc.) with actual values specific to your project.
+- This template provides a comprehensive overview suitable for a GitHub repository hosting a React-based news application utilizing a news API and Bootstrap for styling. Adjustments can be made based on additional project features or specific requirements.
