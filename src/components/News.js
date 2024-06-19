@@ -18,7 +18,12 @@ const News = (props) => {
     try {
       const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${page}&pageSize=5`; 
       setLoading(true);
-      let response = await fetch(url);
+      let response = await fetch(url, {
+        headers: {
+          'Upgrade': 'h2c',
+          'Connection': 'Upgrade'
+        }
+      });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
@@ -44,7 +49,12 @@ const News = (props) => {
     try {
       const nextPage = page + 1;
       const url = `https://newsapi.org/v2/top-headlines?country=${props.country}&category=${props.category}&apiKey=${props.apiKey}&page=${nextPage}&pageSize=5`;
-      const response = await fetch(url);
+      const response = await fetch(url, {
+        headers: {
+          'Upgrade': 'h2c',
+          'Connection': 'Upgrade'
+        }
+      });
 
       if (!response.ok) {
         throw new Error(`HTTP error! status: ${response.status}`);
